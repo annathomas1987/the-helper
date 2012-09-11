@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "The Helper/TheHelperFirstViewController.m"
-         timestampString = "369047952.066298"
+         timestampString = "369057206.217795"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
          landmarkName = "-CalculateLoan:"
          landmarkType = "5">
       </FileBreakpoint>

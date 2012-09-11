@@ -9,10 +9,6 @@
 #import "TheHelperFirstViewController.h"
 #import "Math.h"
 
-@interface TheHelperFirstViewController ()
-
-@end
-
 @implementation TheHelperFirstViewController 
 
 //----from here
@@ -33,6 +29,13 @@
     
 }
 
+- (void)HideKeyboardOnBgTouch:(id)sender
+{
+    [principalAmount resignFirstResponder];
+    [rateLabel resignFirstResponder];
+    [rateAmount resignFirstResponder];
+    [loanTerm resignFirstResponder];
+}
 
 //----till here
 - (void)viewDidLoad

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TheHelperFirstViewController : UIViewController
+@interface TheHelperFirstViewController : UIViewController {
+    UITextField *principalAmount, *rateAmount, *loanTerm;
+    UILabel *rateLabel;
+}
 
 //-----from here
 @property (nonatomic, retain) IBOutlet UITextField *principalAmount;

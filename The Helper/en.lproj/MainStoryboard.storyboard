@@ -67,9 +67,15 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="CalculateLoan:" destination="2" eventType="touchUpInside" id="thq-aM-eAg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="HideKeyboardOnBgTouch:" destination="2" eventType="touchDown" id="0JX-8j-JVv"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" enabled="NO" title="Loan" image="119-piggy-bank.png" id="7"/>
                     <connections>
@@ -170,22 +176,6 @@
         <image name="119-piggy-bank.png" width="27" height="20"/>
         <image name="192-credit-card.png" width="28" height="18"/>
     </resources>
-    <classes>
-        <class className="TheHelperFirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TheHelperFirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="CalculateLoan:"/>
-                <relationship kind="action" name="HideKeyboardOnBgTouch:"/>
-                <relationship kind="outlet" name="loanTerm" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="principalAmount" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="rateAmount" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="rateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TheHelperSecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TheHelperSecondViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
