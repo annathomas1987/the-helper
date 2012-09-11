@@ -25,6 +25,8 @@
 		22EFA83E15FF0E64009A947E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFA81415FF0E64009A947E /* Foundation.framework */; };
 		22EFA84615FF0E64009A947E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22EFA84415FF0E64009A947E /* InfoPlist.strings */; };
 		22EFA84915FF0E64009A947E /* The_HelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFA84815FF0E64009A947E /* The_HelperTests.m */; };
+		22EFA85715FF11BF009A947E /* 119-piggy-bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EFA85615FF11BF009A947E /* 119-piggy-bank.png */; };
+		22EFA85A15FF1500009A947E /* 192-credit-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EFA85915FF1500009A947E /* 192-credit-card.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,27 +44,29 @@
 		22EFA81215FF0E64009A947E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		22EFA81415FF0E64009A947E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		22EFA81615FF0E64009A947E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		22EFA81A15FF0E64009A947E /* The Helper-Info.plist */ = {isa = PBXFileReference; path = "The Helper-Info.plist"; sourceTree = "<group>"; };
+		22EFA81A15FF0E64009A947E /* The Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The Helper-Info.plist"; sourceTree = "<group>"; };
 		22EFA81C15FF0E64009A947E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22EFA81E15FF0E64009A947E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22EFA82015FF0E64009A947E /* The Helper-Prefix.pch */ = {isa = PBXFileReference; path = "The Helper-Prefix.pch"; sourceTree = "<group>"; };
-		22EFA82115FF0E64009A947E /* TheHelperAppDelegate.h */ = {isa = PBXFileReference; path = TheHelperAppDelegate.h; sourceTree = "<group>"; };
+		22EFA82015FF0E64009A947E /* The Helper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Helper-Prefix.pch"; sourceTree = "<group>"; };
+		22EFA82115FF0E64009A947E /* TheHelperAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheHelperAppDelegate.h; sourceTree = "<group>"; };
 		22EFA82215FF0E64009A947E /* TheHelperAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheHelperAppDelegate.m; sourceTree = "<group>"; };
 		22EFA82515FF0E64009A947E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		22EFA82715FF0E64009A947E /* TheHelperFirstViewController.h */ = {isa = PBXFileReference; path = TheHelperFirstViewController.h; sourceTree = "<group>"; };
+		22EFA82715FF0E64009A947E /* TheHelperFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheHelperFirstViewController.h; sourceTree = "<group>"; };
 		22EFA82815FF0E64009A947E /* TheHelperFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheHelperFirstViewController.m; sourceTree = "<group>"; };
 		22EFA82A15FF0E64009A947E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		22EFA82C15FF0E64009A947E /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		22EFA82E15FF0E64009A947E /* TheHelperSecondViewController.h */ = {isa = PBXFileReference; path = TheHelperSecondViewController.h; sourceTree = "<group>"; };
+		22EFA82E15FF0E64009A947E /* TheHelperSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheHelperSecondViewController.h; sourceTree = "<group>"; };
 		22EFA82F15FF0E64009A947E /* TheHelperSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheHelperSecondViewController.m; sourceTree = "<group>"; };
 		22EFA83115FF0E64009A947E /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		22EFA83315FF0E64009A947E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		22EFA83A15FF0E64009A947E /* The HelperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The HelperTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFA83B15FF0E64009A947E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		22EFA84315FF0E64009A947E /* The HelperTests-Info.plist */ = {isa = PBXFileReference; path = "The HelperTests-Info.plist"; sourceTree = "<group>"; };
+		22EFA84315FF0E64009A947E /* The HelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The HelperTests-Info.plist"; sourceTree = "<group>"; };
 		22EFA84515FF0E64009A947E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		22EFA84715FF0E64009A947E /* The_HelperTests.h */ = {isa = PBXFileReference; path = The_HelperTests.h; sourceTree = "<group>"; };
+		22EFA84715FF0E64009A947E /* The_HelperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = The_HelperTests.h; sourceTree = "<group>"; };
 		22EFA84815FF0E64009A947E /* The_HelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_HelperTests.m; sourceTree = "<group>"; };
+		22EFA85615FF11BF009A947E /* 119-piggy-bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "119-piggy-bank.png"; path = "../../../../../Downloads/glyphish-icons/PNG icons/119-piggy-bank.png"; sourceTree = "<group>"; };
+		22EFA85915FF1500009A947E /* 192-credit-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "192-credit-card.png"; path = "../../../../../Downloads/glyphish-icons/PNG icons/192-credit-card.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 		22EFA81815FF0E64009A947E /* The Helper */ = {
 			isa = PBXGroup;
 			children = (
+				22EFA85915FF1500009A947E /* 192-credit-card.png */,
+				22EFA85615FF11BF009A947E /* 119-piggy-bank.png */,
 				22EFA82115FF0E64009A947E /* TheHelperAppDelegate.h */,
 				22EFA82215FF0E64009A947E /* TheHelperAppDelegate.m */,
 				22EFA82415FF0E64009A947E /* MainStoryboard.storyboard */,
@@ -245,6 +251,8 @@
 				22EFA82D15FF0E64009A947E /* first@2x.png in Resources */,
 				22EFA83215FF0E64009A947E /* second.png in Resources */,
 				22EFA83415FF0E64009A947E /* second@2x.png in Resources */,
+				22EFA85715FF11BF009A947E /* 119-piggy-bank.png in Resources */,
+				22EFA85A15FF1500009A947E /* 192-credit-card.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

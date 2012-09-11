@@ -7,17 +7,41 @@
 //
 
 #import "TheHelperFirstViewController.h"
+#import "Math.h"
 
 @interface TheHelperFirstViewController ()
 
 @end
 
-@implementation TheHelperFirstViewController
+@implementation TheHelperFirstViewController 
 
+//----from here
+@synthesize principalAmount, rateLabel, rateAmount, loanTerm;
+
+- (void) CalculateLoan: (id) sender {
+
+    [principalAmount resignFirstResponder];
+    
+    double principal = [principalAmount.text doubleValue];
+    double rate = [rateAmount.text doubleValue];
+    double noOfYears = [rateLabel.text doubleValue];
+    noOfYears = noOfYears/12;
+    double tempHolder = (1+rate);
+    tempHolder = pow(tempHolder,noOfYears);
+    double calculatedLoan = (principal)*rate*tempHolder;
+    calculatedLoan = calculatedLoan / (tempHolder - 1);
+    
+}
+
+
+//----till here
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.principalAmount = nil;
+    self.rateAmount = nil;
+    self.rateLabel = nil;
 }
 
 - (void)viewDidUnload
