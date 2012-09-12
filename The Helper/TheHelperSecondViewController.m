@@ -14,6 +14,25 @@
 
 @implementation TheHelperSecondViewController
 
+@synthesize billAmount, tipRateLabel, tiprate;
+
+- (void) CalculateTip: (id) sender {
+    
+    [billAmount resignFirstResponder];
+    
+    double bill = [billAmount.text doubleValue];
+    double rate = [tiprate.text doubleValue];
+    double calculatedTip = bill;
+    calculatedTip = calculatedTip * rate;
+}
+- (void)HideKeyboardOnBgTouch:(id)sender
+{
+    [billAmount resignFirstResponder];
+    [tipRateLabel resignFirstResponder];
+    [tiprate resignFirstResponder];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +43,9 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    self.billAmount = nil;
+    self.tipRateLabel = nil;
+    self.tiprate = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

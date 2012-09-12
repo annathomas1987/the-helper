@@ -10,4 +10,14 @@
 
 @interface TheHelperSecondViewController : UIViewController
 
+//-----from here
+@property (nonatomic, retain) IBOutlet UITextField *billAmount;
+@property (nonatomic, retain) IBOutlet UILabel *tipRateLabel;
+@property (nonatomic, retain) IBOutlet UITextField *tiprate;
+
+- (IBAction)CalculateTip:(id)sender;
+
+- (IBAction)HideKeyboardOnBgTouch:(id)sender;
+
+//----till here
 @end

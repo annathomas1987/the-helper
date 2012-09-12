@@ -42,15 +42,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.principalAmount = nil;
-    self.rateAmount = nil;
-    self.rateLabel = nil;
+
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    self.principalAmount = nil;
+    self.rateAmount = nil;
+    self.rateLabel = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
