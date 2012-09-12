@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D8B11E1600633800F193FD /* TheHelperFirstResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D8B11D1600633800F193FD /* TheHelperFirstResultViewController.m */; };
+		22D8B1221600646B00F193FD /* TheHelperSecondResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D8B1211600646B00F193FD /* TheHelperSecondResultViewController.m */; };
 		22EFA81315FF0E64009A947E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFA81215FF0E64009A947E /* UIKit.framework */; };
 		22EFA81515FF0E64009A947E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFA81415FF0E64009A947E /* Foundation.framework */; };
 		22EFA81715FF0E64009A947E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFA81615FF0E64009A947E /* CoreGraphics.framework */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22D8B11C1600633800F193FD /* TheHelperFirstResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheHelperFirstResultViewController.h; sourceTree = "<group>"; };
+		22D8B11D1600633800F193FD /* TheHelperFirstResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheHelperFirstResultViewController.m; sourceTree = "<group>"; };
+		22D8B1201600646B00F193FD /* TheHelperSecondResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheHelperSecondResultViewController.h; sourceTree = "<group>"; };
+		22D8B1211600646B00F193FD /* TheHelperSecondResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheHelperSecondResultViewController.m; sourceTree = "<group>"; };
 		22EFA80E15FF0E64009A947E /* The Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFA81215FF0E64009A947E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		22EFA81415FF0E64009A947E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,12 +137,16 @@
 				22EFA82115FF0E64009A947E /* TheHelperAppDelegate.h */,
 				22EFA82215FF0E64009A947E /* TheHelperAppDelegate.m */,
 				22EFA82415FF0E64009A947E /* MainStoryboard.storyboard */,
+				22D8B1201600646B00F193FD /* TheHelperSecondResultViewController.h */,
+				22D8B1211600646B00F193FD /* TheHelperSecondResultViewController.m */,
+				22D8B11C1600633800F193FD /* TheHelperFirstResultViewController.h */,
+				22D8B11D1600633800F193FD /* TheHelperFirstResultViewController.m */,
 				22EFA82715FF0E64009A947E /* TheHelperFirstViewController.h */,
 				22EFA82815FF0E64009A947E /* TheHelperFirstViewController.m */,
-				22EFA82A15FF0E64009A947E /* first.png */,
-				22EFA82C15FF0E64009A947E /* first@2x.png */,
 				22EFA82E15FF0E64009A947E /* TheHelperSecondViewController.h */,
 				22EFA82F15FF0E64009A947E /* TheHelperSecondViewController.m */,
+				22EFA82C15FF0E64009A947E /* first@2x.png */,
+				22EFA82A15FF0E64009A947E /* first.png */,
 				22EFA83115FF0E64009A947E /* second.png */,
 				22EFA83315FF0E64009A947E /* second@2x.png */,
 				22EFA81915FF0E64009A947E /* Supporting Files */,
@@ -291,6 +301,8 @@
 				22EFA82315FF0E64009A947E /* TheHelperAppDelegate.m in Sources */,
 				22EFA82915FF0E64009A947E /* TheHelperFirstViewController.m in Sources */,
 				22EFA83015FF0E64009A947E /* TheHelperSecondViewController.m in Sources */,
+				22D8B11E1600633800F193FD /* TheHelperFirstResultViewController.m in Sources */,
+				22D8B1221600646B00F193FD /* TheHelperSecondResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +480,7 @@
 				22EFA84E15FF0E64009A947E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22EFA84F15FF0E64009A947E /* Build configuration list for PBXNativeTarget "The HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +489,7 @@
 				22EFA85115FF0E64009A947E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

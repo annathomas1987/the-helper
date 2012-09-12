@@ -8,16 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TheHelperSecondViewController : UIViewController
+@interface TheHelperSecondViewController : UIViewController{
+    UITextField *billAmount;
+    UILabel *tipRateLabel;
+    IBOutlet UITextField *tipRate;
+    IBOutlet UISlider *rateSlider;
+}
 
 //-----from here
 @property (nonatomic, retain) IBOutlet UITextField *billAmount;
 @property (nonatomic, retain) IBOutlet UILabel *tipRateLabel;
-@property (nonatomic, retain) IBOutlet UITextField *tiprate;
+@property (nonatomic, retain) IBOutlet UITextField *tipRate;
+@property (nonatomic, retain) IBOutlet UISlider *rateSlider;
 
-- (IBAction)CalculateTip:(id)sender;
-
-- (IBAction)HideKeyboardOnBgTouch:(id)sender;
+- (IBAction) CalculateTip:(id)sender;
+- (IBAction) HideKeyboardOnBgTouch:(id)sender;
 
 //----till here
 @end

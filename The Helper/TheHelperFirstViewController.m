@@ -12,7 +12,7 @@
 @implementation TheHelperFirstViewController 
 
 //----from here
-@synthesize principalAmount, rateLabel, rateAmount, loanTerm;
+@synthesize principalAmount, rateLabel, rateAmount, loanTerm, rateSlider;
 
 - (void) CalculateLoan: (id) sender {
 
@@ -37,6 +37,27 @@
     [loanTerm resignFirstResponder];
 }
 
+- (IBAction) sliderValueChanged:(UISlider *)sender {  
+    rateAmount.text = [NSString stringWithFormat:@"%.1f", [sender value]];  
+}  
+
+- (IBAction) textFieldValueChanged:(id)sender{
+    NSString *textValue =[rateAmount text];
+    int value = [textValue intValue];
+    if (value<0) {
+        value = 0;
+    }
+    else if (value>100) {
+        value = 100;
+    }
+    rateSlider.value = value;
+    rateAmount.text = [NSString stringWithFormat:@"%.1f", value];
+    if([rateAmount canResignFirstResponder]) {
+        [rateAmount resignFirstResponder];
+    }
+    
+}
+
 //----till here
 - (void)viewDidLoad
 {
@@ -44,14 +65,41 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
 }
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Release any cached data, images, etc that aren't in use.
+}
 
 - (void)viewDidUnload
 {
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    self.rateSlider = nil;
     self.principalAmount = nil;
     self.rateAmount = nil;
     self.rateLabel = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
